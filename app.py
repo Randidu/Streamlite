@@ -31,7 +31,7 @@ if uploaded_image and caption_generate:
         st.image(image)
 
         result = captioning_model(image)
-        gen_text = result[0]['gen_text']
+        gen_text = result[0]['generated_text']
         st.markdown(gen_text)
 
 elif caption_generate:
